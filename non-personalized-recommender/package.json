@@ -1,0 +1,22 @@
+{
+  "name": "non-personalized-recommender",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "packageManager": "yarn@3.4.1",
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "jshint": "^2.13.6",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tshint": "^0.0.2",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "csv": "^6.2.7"
+  }
+}
