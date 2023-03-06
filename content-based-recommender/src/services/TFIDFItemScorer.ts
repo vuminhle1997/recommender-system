@@ -1,12 +1,11 @@
 class TFIDFItemScorer {
-  constructor() {}
-
   static scoreWithDetails(
     movies: string[][],
     ratingsOfUser: Map<string, number>,
     model: Map<number, Map<string, number>>
   ) {
     const scores: { id: string; score: number }[] = [];
+    // DO cosine similarity
     movies.forEach((movie) => {
       const iv = model.get(Number(movie[0]));
       if (iv) {

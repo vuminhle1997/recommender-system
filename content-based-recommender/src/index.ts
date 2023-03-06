@@ -45,8 +45,7 @@ const pendingRatings = new Promise<any[][]>((resolve) => {
     })
     .on('end', () => {
       resolve(ratings);
-    })
-    .on('close', () => console.log('finished'));
+    });
 });
 
 const pendingMovies = new Promise<any[][]>((resolve) => {
@@ -82,7 +81,8 @@ const pendingTags = new Promise<any[][]>((resolve) => {
 async function main() {
   const MOVIES = await pendingMovies;
   const TAGS = await pendingTags;
-  //   console.log(RATINGS);
+  const RATINGS = await pendingRatings;
+
   for (const movie of MOVIES) {
     const id = movie[0];
     for (let i = 0; i < TAGS.length; i++) {
@@ -104,8 +104,6 @@ async function main() {
     }
   }
   const recommender = new ContentBasedRecommender(MOVIES);
-  const RATINGS = await pendingRatings;
-
   const userProfileBuilder = new UserProfileBuilder(recommender);
   const ratingsOfUserONE = RATINGS.filter((rating) => rating[0] === '1');
   const profilePreferences = userProfileBuilder.createUserProfilePreferences(
@@ -115,6 +113,39 @@ async function main() {
     movies,
     profilePreferences,
     recommender.getModelData
+  ).map((r) => ({ ...r, movie: movies.find((movie) => movie[0] === r.id) }));
+  const json = {
+    id: '1',
+    movies: recommendations,
+  };
+  const obj = JSON.stringify(json);
+  fs.writeFile(
+    path.join(process.cwd(), 'data', 'out', 'recommendations_user_1.json'),
+    obj,
+    'utf-8',
+    () => {
+      console.log('Finished recommendation for User: 1');
+      console.log('THE TOP 5 for User 1!');
+      for (let i = 0; i < 6; i++) {
+        console.log(`************* ${i + 1}`);
+        console.log(recommendations[i]);
+      }
+    }
+  );
+
+  const foo = {};
+
+  for (const [k, v] of profilePreferences) {
+    Object.assign(foo, {
+      [k]: v,
+    });
+  }
+  const string = JSON.stringify(foo);
+  fs.writeFile(
+    path.join(process.cwd(), 'data', 'out', 'preferences_1.json'),
+    string,
+    'utf-8',
+    () => console.log('Done')
   );
 }
 
