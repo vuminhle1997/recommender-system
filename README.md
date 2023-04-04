@@ -1,5 +1,7 @@
 # Recommender System
 
+This is a repository containing different recommending algorithms.
+
 ## Prerequisite
 
 - NodeJS v >= 18
