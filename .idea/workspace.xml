@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77daaa5b-650a-470f-800e-b5c6953d69bc" name="Changes" comment="Comments" />
+    <list default="true" id="77daaa5b-650a-470f-800e-b5c6953d69bc" name="Changes" comment="Comments">
+      <change afterPath="$PROJECT_DIR$/item-item-collaborative-recommender/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-user-collaborative-recommender/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-based-recommender/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/content-based-recommender/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-based-recommender/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/content-based-recommender/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-item-collaborative-recommender/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/item-item-collaborative-recommender/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/non-personalized-recommender/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/non-personalized-recommender/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/non-personalized-recommender/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/non-personalized-recommender/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-user-collaborative-recommender/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/user-user-collaborative-recommender/src/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,14 +66,14 @@
       <recent name="$PROJECT_DIR$/user-user-collaborative-recommender/data/movielens" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev ii">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="cbf dev" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/content-based-recommender/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v18.15.0/bin/node" />
       <package-manager value="$PROJECT_DIR$/non-personalized-recommender/.yarn/releases/yarn-3.4.1.cjs" />
       <envs />
       <method v="2" />
@@ -84,11 +95,26 @@
       <scripts>
         <script value="dev" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v18.15.0/bin/node" />
       <package-manager value="$PROJECT_DIR$/non-personalized-recommender/.yarn/releases/yarn-3.4.1.cjs" />
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/non-personalized-recommender/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v18.15.0/bin/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -102,7 +128,8 @@
       <workItem from="1679940978921" duration="1304000" />
       <workItem from="1680104708074" duration="27997000" />
       <workItem from="1680542903088" duration="2886000" />
-      <workItem from="1680639139734" duration="634000" />
+      <workItem from="1680639139734" duration="1267000" />
+      <workItem from="1680673448944" duration="2513000" />
     </task>
     <task id="LOCAL-00001" summary="Fix: UUF">
       <created>1679939989858</created>
@@ -160,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680639150925</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Comments">
+      <created>1680639832160</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680639832160</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Comments">
+      <created>1680639987834</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680639987834</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +236,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/item-item-collaborative-recommender/src/index.ts</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -207,6 +248,30 @@
           <url>file://$PROJECT_DIR$/content-based-recommender/src/services/cbf/CBFRecommender.ts</url>
           <line>54</line>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/non-personalized-recommender/src/index.ts</url>
+          <line>84</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/non-personalized-recommender/src/index.ts</url>
+          <line>58</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/non-personalized-recommender/src/index.ts</url>
+          <line>145</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/non-personalized-recommender/src/index.ts</url>
+          <line>151</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

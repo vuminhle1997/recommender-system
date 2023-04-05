@@ -87,8 +87,10 @@ async function main() {
     movies.push(m);
   });
 
+  // show results of the selected movies
   const recommender = new UURecommender(selectedMovies, userRatings);
   const for1 = recommender.computeScoreForUserWithDetails(320);
+  console.log(for1);
 }
 
 main();

@@ -76,6 +76,7 @@ async function main() {
 
     const model = new SimpleItemItemModelInjector(movieList, allRatings).get();
     const recommender = new SimpleItemScorer(model);
+    // shows the score of the selected movies (like the java project)
     const recommendations = recommender.scoreWithDetailsSelectedMovies(320, selectedMovies);
     console.log(recommendations);
 }

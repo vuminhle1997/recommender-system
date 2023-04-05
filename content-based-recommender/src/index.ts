@@ -119,7 +119,8 @@ async function main() {
   const model = CBFModelInjector.get(movieList);
   const recommender = new CBFRecommender(daoContainer, model);
   const result = recommender.scoreWithDetails(320, movieList);
-  console.log(result);
+  const top20 = result.slice(0, 20)
+  console.log(top20);
 }
 
 main();
